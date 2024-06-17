@@ -1,4 +1,4 @@
-.Container{
+.Container {
   margin-left: 100px;
   margin-right: 100px;
   margin-bottom: 10px;
@@ -6,7 +6,7 @@
 
 .employee-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-columns: repeat(4, 1fr); */
   gap: 20px;
 }
 
@@ -18,16 +18,101 @@
   padding-bottom: 20px;
 }
 
+.form-control {
+  display: flex;
+  width: 500px;
+}
+
 h1 {
   display: flex;
   justify-content: center;
   background-color: rgb(76, 225, 255);
 }
 
-#male,#female{
+#male,
+#female {
   margin-left: 20px;
 }
 
-.btn{
-  /* width: 70px; */
+.card-text input {
+  float: right;
+}
+
+.d-flex button {
+  width: 70px;
+}
+
+
+
+@media screen and (max-width: 766px) {
+  .Container {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .regis {
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .form-control {
+    display: flex;
+    width: 100%;
+  }
+  .Container p {
+    display: flex;
+    justify-content: center;
+  }
+  .employee-list {
+    /* display: grid; */
+    grid-template-columns: repeat(1, 1fr);
+    /* gap: 20px; */
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .card-text input {
+    float: right;
+    width: 250px;
+  }
+}
+
+@media only screen and (min-width: 767px){
+  
+  .card-text input {
+    float: right;
+    width: 150px;
+  }
+
+  .employee-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+
+@media only screen and (min-width: 992px){
+  .card-text input {
+    float: right;
+    width: 250px;
+  }
+
+  .employee-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .card-text input {
+    float: right;
+    width: 200px;
+  }
+
+  .employee-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
 }
