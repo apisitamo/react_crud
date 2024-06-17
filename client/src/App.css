@@ -1,0 +1,33 @@
+.Container{
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 10px;
+}
+
+.employee-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.regis {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(227, 227, 227);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(76, 225, 255);
+}
+
+#male,#female{
+  margin-left: 20px;
+}
+
+.btn{
+  /* width: 70px; */
+}
