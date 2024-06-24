@@ -177,7 +177,6 @@ function App() {
             </label>
             <input
               type="text"
-              style={{ width: "500px" }}
               className="form-control"
               placeholder="ตัวอย่าง : อภิสิทธิ์"
               value={name}
@@ -192,7 +191,6 @@ function App() {
             </label>
             <input
               type="text"
-              style={{ width: "500px" }}
               className="form-control"
               placeholder="ตัวอย่าง : อมรแสงชัยกุล"
               value={surname}
@@ -207,7 +205,6 @@ function App() {
             </label>
             <input
               type="text"
-              style={{ width: "500px" }}
               className="form-control"
               placeholder="ตัวอย่าง : อู๋"
               value={nickname}
@@ -222,7 +219,6 @@ function App() {
             </label>
             <input
               type="date"
-              style={{ width: "500px" }}
               className="form-control"
               value={date}
               onChange={(event) => {
@@ -236,7 +232,6 @@ function App() {
             </label>
             <input
               type="number"
-              style={{ width: "500px" }}
               className="form-control"
               placeholder="ตัวอย่าง : 22"
               value={age}
@@ -269,7 +264,6 @@ function App() {
                   เพศ :{" "}
                   <input
                     type="text"
-                    style={{ float: "right" }}
                     value={val.title}
                     disabled={editIndex !== index}
                     onChange={(e) => handleInputChange(e, index, "title")}
@@ -279,7 +273,6 @@ function App() {
                   ชื่อ :{" "}
                   <input
                     type="text"
-                    style={{ float: "right" }}
                     value={val.name}
                     disabled={editIndex !== index}
                     onChange={(e) => handleInputChange(e, index, "name")}
@@ -289,7 +282,6 @@ function App() {
                   นามสกุล :{" "}
                   <input
                     type="text"
-                    style={{ float: "right" }}
                     value={val.surname}
                     disabled={editIndex !== index}
                     onChange={(e) => handleInputChange(e, index, "surname")}
@@ -299,7 +291,6 @@ function App() {
                   ชื่อเล่น :{" "}
                   <input
                     type="text"
-                    style={{ float: "right" }}
                     value={val.nickname}
                     disabled={editIndex !== index}
                     onChange={(e) => handleInputChange(e, index, "nickname")}
@@ -309,7 +300,6 @@ function App() {
                   วันเกิด :{" "}
                   <input
                     type="text"
-                    style={{ float: "right" }}
                     value={formatDate(val.date)}
                     disabled={editIndex !== index}
                     onChange={(e) => handleInputChange(e, index, "date")}
@@ -319,7 +309,6 @@ function App() {
                   อายุ :{" "}
                   <input
                     type="number"
-                    style={{ float: "right" }}
                     value={val.age}
                     disabled={editIndex !== index}
                     onChange={(e) => handleInputChange(e, index, "age")}
@@ -329,14 +318,12 @@ function App() {
                   {editIndex === index ? (
                     <>
                       <button
-                        style={{ width: "70px" }}
                         className="btn btn-success"
                         onClick={() => saveEditedEmployee(index)}
                       >
                         บันทึก
                       </button>
                       <button
-                        style={{ width: "70px" }}
                         className="btn btn-secondary"
                         onClick={handleCancel}
                       >
@@ -346,14 +333,12 @@ function App() {
                   ) : (
                     <>
                       <button
-                        style={{ width: "70px" }}
                         className="btn btn-warning"
                         onClick={() => handleEdit(index)}
                       >
                         แก้ไข
                       </button>
                       <button
-                        style={{ width: "70px" }}
                         className="btn btn-danger"
                         onClick={() => deleteEmployee(index)}
                       >
